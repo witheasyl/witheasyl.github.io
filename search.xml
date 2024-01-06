@@ -19,8 +19,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2024/01/06/Hexo+GitHub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</url>
+    <title>Hexo+GitHub搭建网站</title>
+    <url>/2024/01/06/Hexo-GitHub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p><em><strong>一、前置知识</strong></em></p>
 <p>命令行的操作：后面的命令都是在命令行(cmd)或者类似命令行(Git Bash)的界面运行</p>
 <p>Markdown文件（后缀是md的文件）的编写：推荐使用<strong>Typora</strong>(<a href="https://gitee.com/starlike_daydream/installer/raw/master/typora-setup-x64.exe">破解版链接</a>)，不需要记忆语法格式了</p>
@@ -64,7 +64,6 @@
 <p>(4)打开<a href="http://github.com/">github</a>，在右上角的头像下面点击<strong>settings</strong>，再点击<strong>SSH and GPG keys</strong>，新建一个SSH，名字随便取一个都可以，把你的<strong>id_rsa.pub</strong>里面的信息复制进去，点击<strong>create&#x2F;创建</strong>即可完成创建</p>
 <p>(5)验证ssh连接是否成功：<code>ssh -T git@github.com</code>，出现用户名(Hi!用户名.XXXXXXX)，即代表链接成功</p>
 <p>4.生产的博客项目根目录下的**_config.yml**(可用vscode打开,也可用记事本打开)，划到最底部,deploy下的repository 要配置成自己的仓库地址<br><strong>(这是我的不要用!用你自己的!举个例子而已!)</strong></p>
-<p><img src="/public/images/first-1.png"></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line"></span><br><span class="line"> <span class="built_in">type</span>: git</span><br><span class="line"></span><br><span class="line"> repo: git@github.com:witheasyl/witheasyl.github.io.git</span><br><span class="line"></span><br><span class="line"> branch: main</span><br></pre></td></tr></table></figure>
 
 <p>（记得文件要保存，如果编辑器窗口顶部的文件名前面有个星号*，那就说明话没有保存）</p>

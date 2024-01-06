@@ -157,17 +157,28 @@
     
     
     <article
-  id="post-Hexo+GitHub搭建网站"
+  id="post-Hexo-GitHub搭建网站"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
 >
   <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2024/01/06/Hexo-GitHub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/"
+    >Hexo+GitHub搭建网站</a> 
+</h2>
+ 
+
+      
+    </header>
      
     <div class="article-meta">
-      <a href="/2024/01/06/Hexo+GitHub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/" class="article-date">
-  <time datetime="2024-01-06T08:02:18.011Z" itemprop="datePublished">2024-01-06</time>
+      <a href="/2024/01/06/Hexo-GitHub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99/" class="article-date">
+  <time datetime="2024-01-06T08:39:49.000Z" itemprop="datePublished">2024-01-06</time>
 </a>    
     </div>
       
@@ -216,7 +227,6 @@
 <p>(4)打开<a target="_blank" rel="noopener" href="http://github.com/">github</a>，在右上角的头像下面点击<strong>settings</strong>，再点击<strong>SSH and GPG keys</strong>，新建一个SSH，名字随便取一个都可以，把你的<strong>id_rsa.pub</strong>里面的信息复制进去，点击<strong>create&#x2F;创建</strong>即可完成创建</p>
 <p>(5)验证ssh连接是否成功：<code>ssh -T git@github.com</code>，出现用户名(Hi!用户名.XXXXXXX)，即代表链接成功</p>
 <p>4.生产的博客项目根目录下的**_config.yml**(可用vscode打开,也可用记事本打开)，划到最底部,deploy下的repository 要配置成自己的仓库地址<br><strong>(这是我的不要用!用你自己的!举个例子而已!)</strong></p>
-<p><img src="/public/images/first-1.png"></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"></span><br><span class="line"> <span class="built_in">type</span>: git</span><br><span class="line"></span><br><span class="line"> repo: git@github.com:witheasyl/witheasyl.github.io.git</span><br><span class="line"></span><br><span class="line"> branch: main</span><br></pre></td></tr></table></figure>
 
 <p>（记得文件要保存，如果编辑器窗口顶部的文件名前面有个星号*，那就说明话没有保存）</p>
